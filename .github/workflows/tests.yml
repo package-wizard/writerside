@@ -1,0 +1,70 @@
+name: Tests
+
+on:
+    push:
+        branches-ignore:
+            - main
+    pull_request:
+
+permissions: read-all
+
+env:
+    COMPOSER_TOKEN: ${{ secrets.COMPOSER_TOKEN }}
+    INSTANCE: docs/laravel-lang
+    ARTIFACT_DOCS: webHelpLARAVEL-LANG2-all.zip
+    BUILDER_VERSION: 2025.03.8312
+
+jobs:
+    build:
+        name: Build application
+        runs-on: ubuntu-latest
+
+        steps:
+            -   uses: actions/checkout@v4
+                with:
+                    fetch-depth: 0
+
+            -   name: Setup PHP
+                uses: shivammathur/setup-php@v2
+                with:
+                    extensions: curl, mbstring, zip, pcntl, pdo, pdo_sqlite, iconv, simplexml
+                    coverage: xdebug
+
+            -   name: Configure git
+                run: git config --global --add safe.directory /github/workspace
+
+            -   name: Install dependencies
+                run: composer update --no-progress --no-interaction
+
+            -   name: Build documentation
+                uses: JetBrains/writerside-github-action@v4
+                with:
+                    instance: ${{ env.INSTANCE }}
+                    artifact: ${{ env.ARTIFACT_DOCS }}
+                    docker-version: ${{ env.BUILDER_VERSION }}
+
+            -   name: Upload artifacts
+                uses: actions/upload-artifact@v4
+                with:
+                    name: docs
+                    path: |
+                        artifacts/${{ env.ARTIFACT_DOCS }}
+                        artifacts/report.json
+                    retention-days: 7
+
+    test:
+        needs: build
+        name: Testing
+        runs-on: ubuntu-latest
+
+        steps:
+            -   name: Download docs artifact
+                uses: actions/download-artifact@v4
+                with:
+                    name: docs
+                    path: artifacts
+
+            -   name: Test documentation
+                uses: JetBrains/writerside-checker-action@v1
+                with:
+                    instance: ${{ env.INSTANCE }}
