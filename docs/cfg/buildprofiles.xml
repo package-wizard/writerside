@@ -4,9 +4,9 @@
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
     <variables>
-        <algolia-api-key>%algolia-api-key%</algolia-api-key>
-        <algolia-id>%algolia-id%</algolia-id>
-        <algolia-index>%algolia-index%</algolia-index>
+        <algolia-api-key>:algolia-api-key:</algolia-api-key>
+        <algolia-id>:algolia-id:</algolia-id>
+        <algolia-index>:algolia-index:</algolia-index>
 
         <generate-canonicals>true</generate-canonicals>
         <locale-code>en_US</locale-code>
@@ -35,10 +35,10 @@
     </build-profile>
 
     <footer>
-        <social type="github" href="https://github.com/package-wizard/installer">
+        <social type="github" href="https://github.com/package-wizard/writerside-template">
             GitHub
         </social>
-        <link href="https://github.com/package-wizard/installer">
+        <link href="https://github.com/package-wizard/writerside-template">
             GitHub
         </link>
         <link href="https://boosty.to/dragon-code">

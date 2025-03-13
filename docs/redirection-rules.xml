@@ -6,9 +6,4 @@
         <accepts>page.html</accepts>
     </rule>
     -->
-    <rule id="25be85a3">
-        <description>Created after removal of "About Writerside Documentation" from Writerside Documentation
-        </description>
-        <accepts>starter-topic.html</accepts>
-    </rule>
 </rules>
