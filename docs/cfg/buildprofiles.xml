@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE buildprofiles SYSTEM "https://resources.jetbrains.com/writerside/1.0/build-profiles.dtd">
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <variables>
+        <algolia-api-key>%algolia-api-key%</algolia-api-key>
+        <algolia-id>%algolia-id%</algolia-id>
+        <algolia-index>%algolia-index%</algolia-index>
+
+        <generate-canonicals>true</generate-canonicals>
+        <locale-code>en_US</locale-code>
+
+        <color-preset>contrast</color-preset>
+        <primary-color>frozen</primary-color>
+
+        <web-root>https://package-wizard.com</web-root>
+        <enable-contribution>true</enable-contribution>
+        <contribute-url>
+            https://github.com/package-wizard/writerside-template/edit/main/docs/
+        </contribute-url>
+
+        <analytics-head-script-file>
+            analytics.html
+        </analytics-head-script-file>
+    </variables>
+
+    <sitemap priority="0.5" change-frequency="weekly" />
+
+    <build-profile instance="writerside-documentation">
+        <variables>
+            <noindex-content>false</noindex-content>
+            <product-web-url>https://package-wizard.com/</product-web-url>
+        </variables>
+    </build-profile>
+
+    <footer>
+        <social type="github" href="https://github.com/package-wizard/installer">
+            GitHub
+        </social>
+        <link href="https://github.com/package-wizard/installer">
+            GitHub
+        </link>
+        <link href="https://boosty.to/dragon-code">
+            Boosty
+        </link>
+    </footer>
+
+</buildprofiles>

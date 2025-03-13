@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Usage" id="usage">
+
+    <show-structure depth="3" />
+
+    <link-summary>Detailed information on the use of the project</link-summary>
+    <card-summary>Detailed information on the use of the project</card-summary>
+    <web-summary>Detailed information on the use of the project</web-summary>
+
+    <primary-label ref="stable" />
+    <secondary-label ref="package-name" />
+
+    <chapter title="First Section" id="first-section">
+        <p>
+            Some usage #1
+        </p>
+
+        <code-block lang="json" src="some-snippet.json" />
+    </chapter>
+
+    <chapter title="Second Section" id="second-section">
+        <p>
+            <include from="snippets.topic" element-id="simple-snippet" />
+        </p>
+
+        <p>
+            Some
+            <tooltip term="description">usage</tooltip>
+            #2
+        </p>
+    </chapter>
+</topic>

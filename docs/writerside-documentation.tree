@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="writerside-documentation"
+                  name="Writerside Documentation"
+                  start-page="introduction.topic">
+
+    <toc-element topic="introduction.topic" />
+    <toc-element topic="installation.topic" />
+    <toc-element topic="usage.topic" />
+    <toc-element topic="license.topic" toc-title="License" />
+</instance-profile>

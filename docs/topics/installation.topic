@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+    SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+    title="Installation" id="installation">
+
+    <show-structure depth="3" />
+
+    <link-summary>Information on quick installation of project</link-summary>
+    <card-summary>Information on quick installation of project</card-summary>
+    <web-summary>Information on quick installation of project</web-summary>
+
+    <p>
+        Install the package using the console command:
+    </p>
+
+    <code-block lang="bash">
+        %install-project%
+    </code-block>
+</topic>

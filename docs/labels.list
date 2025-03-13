@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE labels SYSTEM "https://resources.jetbrains.com/writerside/1.0/labels-list.dtd">
+<labels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/labels.xsd">
+
+    <primary-label id="stable" name="Stable" color="blue" short-name="S">
+        A stable version of the project has been released
+    </primary-label>
+
+    <secondary-label id="package-name" name="1.0.0" color="purple">
+        Latest version is unknown
+    </secondary-label>
+</labels>
