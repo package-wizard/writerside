@@ -9,6 +9,12 @@
             "replace": ["2025"]
         }
     ],
+    "replaces": [
+        {
+            "replace": ["JetBrains%20Writerside"],
+            "with": "Documentation"
+        }
+    ],
     "questions": [
         {
             "type": "string",
@@ -16,12 +22,14 @@
             "replace": [
                 "The Dragon Code",
                 "Writerside Documentation",
+                "Writerside Documentation Template",
                 "Package Wizard, Andrey Helldar"
             ],
             "with": {
                 "slug": true,
                 "uppercase": true,
-                "filename": true
+                "filename": true,
+                "urlQuery": true
             }
         },
         {
