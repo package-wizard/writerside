@@ -9,6 +9,5 @@
             "email": "helldar@dragon-code.pro"
         }
     ],
-    "minimum-stability": "stable",
-    "require": {}
+    "minimum-stability": "stable"
 }
