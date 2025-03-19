@@ -2,8 +2,8 @@
 <!DOCTYPE instance-profile
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
-<instance-profile id="writerside-documentation"
-                  name="Writerside Documentation"
+<instance-profile id="documentation"
+                  name="The Best Documentation"
                   start-page="introduction.topic">
 
     <toc-element topic="introduction.topic" />

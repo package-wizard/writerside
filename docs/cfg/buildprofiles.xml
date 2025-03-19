@@ -27,7 +27,7 @@
 
     <sitemap priority="0.5" change-frequency="weekly" />
 
-    <build-profile instance="writerside-documentation">
+    <build-profile instance="documentation">
         <variables>
             <noindex-content>false</noindex-content>
             <product-web-url>https://package-wizard.com/</product-web-url>

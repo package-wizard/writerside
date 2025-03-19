@@ -8,8 +8,8 @@ permissions: read-all
 
 env:
     COMPOSER_TOKEN: ${{ secrets.COMPOSER_TOKEN }}
-    INSTANCE: docs/writerside-documentation
-    ARTIFACT_DOCS: webHelpWRITERSIDE-DOCUMENTATION2-all.zip
+    INSTANCE: docs/documentation
+    ARTIFACT_DOCS: webHelpDOCUMENTATION2-all.zip
     BUILDER_VERSION: 2025.03.8312
 
 jobs:

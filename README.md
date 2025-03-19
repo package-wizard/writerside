@@ -1,6 +1,6 @@
-# Writerside Documentation Template
+# The Best Documentation Template
 
-![preview](https://preview.dragon-code.pro/The%20Dragon%20Code/JetBrains%20Writerside.svg?pretty-title=0&mode=light)
+![preview](https://preview.dragon-code.pro/package%20wizard/documentation.svg)
 
 ## Documentation
 

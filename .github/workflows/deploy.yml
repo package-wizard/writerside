@@ -16,15 +16,15 @@ permissions:
 env:
     COMPOSER_TOKEN: ${{ secrets.COMPOSER_TOKEN }}
     ALGOLIA_APP_NAME: ${{ secrets.ALGOLIA_APPLICATION_ID }}
-    ALGOLIA_ARTIFACT: algolia-indexes-WRITERSIDE-DOCUMENTATION.zip
-    ALGOLIA_INDEX_NAME: writerside-documentation
+    ALGOLIA_ARTIFACT: algolia-indexes-DOCUMENTATION.zip
+    ALGOLIA_INDEX_NAME: documentation
     ALGOLIA_KEY: ${{ secrets.ALGOLIA_KEY }}
-    ARTIFACT_DOCS: webHelpWRITERSIDE-DOCUMENTATION2-all.zip
+    ARTIFACT_DOCS: webHelpDOCUMENTATION2-all.zip
     ARTIFACT_INDEXES: search-indexes
     ARTIFACT_INDEXES_CLEARED: search-indexes-cleared
-    CONFIG_JSON_PRODUCT: WRITERSIDE-DOCUMENTATION
+    CONFIG_JSON_PRODUCT: DOCUMENTATION
     CONFIG_JSON_VERSION: main
-    INSTANCE: docs/writerside-documentation
+    INSTANCE: docs/documentation
     DOMAIN_NAME: package-wizard.com
     BUILDER_VERSION: 2025.03.8312
 

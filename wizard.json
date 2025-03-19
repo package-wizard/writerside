@@ -1,71 +1,72 @@
 {
-    "$schema": "https://package-wizard.com/schemas/schema-v2.json",
+    "$schema1": "https://package-wizard.com/schemas/schema-v2.json",
     "wizard": {
-        "install": false
+        "manager": {
+            "composer": false,
+            "npm": false,
+            "yarn": false
+        }
     },
     "variables": [
         {
             "type": "year",
-            "replace": ["2025"]
-        }
-    ],
-    "replaces": [
-        {
-            "replace": ["JetBrains%20Writerside"],
-            "with": "Documentation"
+            "replace": "%year%"
         }
     ],
     "questions": [
         {
-            "type": "string",
-            "title": "Enter the name of the project. For example, Package Wizard",
+            "type": "ask",
+            "prompt": "text",
+            "question": "Which name of your project?",
+            "placeholder": "E.g. Package Wizard",
             "replace": [
                 "The Dragon Code",
-                "Writerside Documentation",
-                "Writerside Documentation Template",
-                "Package Wizard, Andrey Helldar"
-            ],
-            "with": {
-                "slug": true,
-                "uppercase": true,
-                "filename": true,
-                "urlQuery": true
-            }
+                "The Best Documentation",
+                "The Best Documentation Template"
+            ]
         },
         {
-            "type": "url",
-            "title": "Enter a link to the Donation service",
-            "replace": ["https://boosty.to/dragon-code"]
+            "type": "ask",
+            "prompt": "text",
+            "question": "What domain name will the documentation have?",
+            "replace": "package-wizard.com",
+            "required": false,
+            "regex": "#^[a-zA-Z0-9-_]+\\.[a-z]{2,}$#"
         },
         {
-            "type": "url",
-            "title": "Enter the URL on which your documentation will be placed",
-            "replace": ["package-wizard.com"]
+            "type": "ask",
+            "prompt": "text",
+            "question": "Which is repository URL? (without schema)",
+            "placeholder": "E.g. github.com/package-wizard/writerside-template",
+            "replace": "github.com/package-wizard/writerside-template",
+            "required": false
         },
         {
-            "type": "string",
-            "title": "Enter the ALGOLIA key",
-            "replace": [":algolia-api-key:"]
+            "type": "ask",
+            "prompt": "text",
+            "question": "Which is ALGOLIA key?",
+            "placeholder": "E.g. 1830e628...",
+            "replace": ":algolia-api-key:"
         },
         {
-            "type": "string",
-            "title": "Enter the ALGOLIA project ID",
-            "replace": [":algolia-id:"]
+            "type": "ask",
+            "prompt": "text",
+            "question": "Which is ALGOLIA project ID?",
+            "placeholder": "E.g. K2N8...",
+            "replace": ":algolia-id:"
         },
         {
-            "type": "string",
-            "title": "Enter the ALGOLIA index name",
-            "replace": [":algolia-index:"]
+            "type": "ask",
+            "prompt": "text",
+            "question": "Which is ALGOLIA index name?",
+            "placeholder": "E.g. documentation-index",
+            "replace": ":algolia-index:"
         },
         {
-            "type": "string",
-            "title": "Enter the repository organization name. For example, package-wizard",
-            "replace": ["package-wizard"]
-        },
-        {
-            "type": "string",
-            "title": "Enter the repository name. For example, writerside-template",
-            "replace": ["writerside-template"]
+            "id": "license",
+            "type": "license",
+            "replace": [":license:", "MIT License"],
+            "default": "MIT License"
         }
     ]
 }
