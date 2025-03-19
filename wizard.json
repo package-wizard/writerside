@@ -1,5 +1,5 @@
 {
-    "$schema1": "https://package-wizard.com/schemas/schema-v2.json",
+    "$schema": "https://package-wizard.com/schemas/schema-v2.json",
     "wizard": {
         "manager": {
             "composer": false,
@@ -12,6 +12,9 @@
             "type": "year",
             "replace": "%year%"
         }
+    ],
+    "removes": [
+        "composer.json"
     ],
     "questions": [
         {
