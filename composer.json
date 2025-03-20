@@ -1,5 +1,5 @@
 {
-    "name": "package-wizard/writerside-template",
+    "name": "package-wizard/writerside",
     "description": "Template for JetBrains Writerside documentation",
     "type": "project",
     "license": "MIT",
