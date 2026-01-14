@@ -1,12 +1,22 @@
 {
     "name": "package-wizard/writerside",
     "description": "Template for JetBrains Writerside documentation",
-    "type": "project",
     "license": "MIT",
+    "type": "project",
     "authors": [
         {
             "name": "Andrey Helldar",
             "email": "helldar@dragon-code.pro"
+        }
+    ],
+    "funding": [
+        {
+            "type": "boosty",
+            "url": "https://boosty.to/dragon-code"
+        },
+        {
+            "type": "yoomoney",
+            "url": "https://yoomoney.ru/to/410012608840929"
         }
     ],
     "minimum-stability": "stable"
